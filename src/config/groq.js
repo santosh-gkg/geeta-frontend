@@ -11,7 +11,7 @@ async function runChat(messages,message) {
   }));
 
   newArray.push({ role: 'user', content: message });
-  const chat_response = await axios.post('http://13.233.114.183:80/chat', {messages:newArray});
+  const chat_response = await axios.post('http://api.sgkg.tech/geeta/', {messages:newArray});
 
   console.log(chat_response.data.response);
   console.log(chat_response);
