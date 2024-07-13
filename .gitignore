@@ -3,3 +3,4 @@ node_modules/
 geeta/
 .vite/
 .chats/
+dist/
