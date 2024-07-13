@@ -229,6 +229,12 @@
     .main-container{
         max-width: 100%;
     }
+    .result{
+        padding: 0px 5%;
+        max-height: 80vh;
+        overflow-y: scroll;
+    
+    }
     .main .card{
         height: 80px;
         padding: 4px;
@@ -259,20 +265,25 @@
 
     .main-bottom{
         position: absolute;
-        bottom: 0px;
+        bottom: 10px;
         width: 100%;
         max-width: 100%;
         padding: 0px 20px;
         margin: auto;
+        background-color: transparent;
+        
+        
+    }
+    .bottom-info{
+        display: none;
     }
     
-
     .search-box{
         padding: 10px 10px;
     }
 
     .search-box input{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .main .bottom-info{
@@ -287,11 +298,11 @@
     
     }
     .result-title{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .result-data{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .result-data p{

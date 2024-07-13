@@ -74,9 +74,7 @@
 }
 
 @media (max-width: 768px){
-    .sidebar img{
-        width: 20px;
-    }
+    
     .sidebar .menu{
         margin-left: 0px;
     }
@@ -89,18 +87,24 @@
         display: inline-flex;
         flex-direction: column;
         /* justify-content: space-between; */
-        background-color: #f0f4ff;
+        background-color: transparent;
         padding: 5px 5px;
     }
     .sidebar .new-chat{
         margin-top: 12px;
         gap: 8px;
-        padding: 10px 15px;
+        padding: 8px 10px;
         background-color: #e6eaf1;
         border-radius: 50px;
         font-size: 14px;
         color:grey;
         cursor: pointer;
+    }
+    .sidebar .new-chat img{
+        width: 15px;
+    }
+    .sidebar .recent{
+        max-height: 75vh;
     }
 
 }
