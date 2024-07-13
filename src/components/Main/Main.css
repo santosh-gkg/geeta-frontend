@@ -220,3 +220,86 @@
 .output h2{
     color: #ea0909;
 }
+
+
+@media screen and (max-width: 768px){
+    .main .cards{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .main-container{
+        max-width: 100%;
+    }
+    .main .card{
+        height: 80px;
+        padding: 4px;
+        background-color: #f0f4f9;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .main .card p{
+        font-size: 13px;
+    }
+    .main .nav img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .main .card img{
+        width: 15px;
+    }
+
+    .main .nav{
+        font-size: 18px;
+    }
+
+    .greet{
+        font-size: 20px;
+    }
+
+    .main-bottom{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 20px;
+        margin: auto;
+    }
+    
+
+    .search-box{
+        padding: 10px 10px;
+    }
+
+    .search-box input{
+        font-size: 16px;
+    }
+
+    .main .bottom-info{
+        font-size: 12px;
+    }
+    .main .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 8px;
+        padding: 6px 0px 20px 0px;
+        margin: 0px 10px ;
+    
+    }
+    .result-title{
+        font-size: 16px;
+    }
+
+    .result-data{
+        font-size: 16px;
+    }
+
+    .result-data p{
+        font-size: 15px;
+    }
+
+    .output h2{
+        font-size: 20px;
+    }
+    
+}
