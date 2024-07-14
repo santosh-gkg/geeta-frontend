@@ -7,6 +7,8 @@ const ContextProvider = (props) => {
     const [input, setInput] = useState('');
     const [currentChat, setCurrentChat] = useState(null);
     const [chats, setChats] = useState([]);
+    const [mobile, setMobile] = useState(false);
+    const [extended, setExtended] = useState(false);
 
     useEffect(() => {
         const storedChats = JSON.parse(localStorage.getItem('chats')) || [];
@@ -98,7 +100,7 @@ const ContextProvider = (props) => {
     };
 
     return (
-        <Context.Provider value={{ input, setInput, currentChat, chats, startNewChat, sendMessage, loadChat, deleteChat}}>
+        <Context.Provider value={{ input, setInput, currentChat, chats, startNewChat, sendMessage, loadChat, deleteChat,mobile,setMobile,extended,setExtended}}>
             {props.children}
         </Context.Provider>
     );

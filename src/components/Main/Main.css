@@ -6,6 +6,9 @@
     background-color: #f0d2a3;
 }
 
+.main .nav .new-chat{
+    display:none;
+}
 .main .nav{
     display: flex;
     align-items: center;
@@ -14,6 +17,10 @@
     padding: 15px;
     color: #585858;
 
+}
+
+.sidebar-button{
+    display: none;
 }
 
 .main .nav img{
@@ -217,17 +224,28 @@
     line-height: 1.3;
 }
 
-.output h2{
-    color: #ea0909;
-}
+
 
 
 @media screen and (max-width: 768px){
+    .main{
+        /* min-height: 50vh; */
+        padding-bottom: 0%;
+       
+    }
+    .main .nav .new-chat{
+        display:flex;
+
+    }
+    
     .main .cards{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     .main-container{
-        max-width: 100%;
+        max-width: fit-content;
+        margin: 0px;
+        margin-right: 0px;
+        
     }
     .result{
         padding: 0px 5%;
@@ -244,7 +262,13 @@
         cursor: pointer;
     }
     .main .card p{
-        font-size: 13px;
+        font-size: 20px;
+        
+    }
+    .sidebar-button{
+        display: flex;
+        background-color: transparent;
+        border: none;
     }
     .main .nav img{
         width: 30px;
@@ -256,19 +280,28 @@
     }
 
     .main .nav{
-        font-size: 18px;
-    }
-
-    .greet{
+        width: fit-content;
+        gap: 10px;
         font-size: 20px;
+        padding: 15px;
+        color: #585858;
+    
+    }
+    .greet{
+        margin: 5px 0px;
+        max-width: 100%;
+        font-size: 20px;
+        color: #151515;
+        font-weight: 500;
+        padding: 10px;
     }
 
     .main-bottom{
         position: absolute;
-        bottom: 10px;
+        bottom: 0px;
         width: 100%;
-        max-width: 100%;
-        padding: 0px 20px;
+        max-width: fit-content;
+        padding: 0px 10px;
         margin: auto;
         background-color: transparent;
         
@@ -279,9 +312,20 @@
     }
     
     .search-box{
-        padding: 10px 10px;
+        position: absolute;
+        padding: 5px;
+        bottom: 50px;
+        margin-bottom:50px ;
+        gap: 0px;
+        background-color: #f0f4f9;
+        max-width: fit-content;
+        
     }
-
+    .search-box div{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
     .search-box input{
         font-size: 20px;
     }
@@ -299,18 +343,15 @@
     }
     .result-title{
         font-size: 20px;
+        margin-right: 20px;
     }
 
     .result-data{
         font-size: 20px;
+        margin-right: 20px;
     }
 
-    .result-data p{
-        font-size: 15px;
-    }
 
-    .output h2{
-        font-size: 20px;
-    }
+    
     
 }

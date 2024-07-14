@@ -76,35 +76,37 @@
 @media (max-width: 768px){
     
     .sidebar .menu{
-        margin-left: 0px;
+        display: none;
     }
     .sidebar .bottom-item{
         padding-right: 0px;
         cursor: pointer;
     }
-    .sidebar{
-        min-height: 100vh;
-        display: inline-flex;
-        flex-direction: column;
-        /* justify-content: space-between; */
-        background-color: transparent;
-        padding: 5px 5px;
-    }
+
     .sidebar .new-chat{
-        margin-top: 12px;
-        gap: 8px;
-        padding: 8px 10px;
-        background-color: #e6eaf1;
-        border-radius: 50px;
-        font-size: 14px;
-        color:grey;
-        cursor: pointer;
+        display: none;
     }
-    .sidebar .new-chat img{
-        width: 15px;
-    }
+    
     .sidebar .recent{
         max-height: 75vh;
+        font-size: 18px;
+    } 
+    .sidebar .recent-entry{
+        display: flex;
+        align-items: start;
+        gap: 5px;
+        padding: 5px;
+        padding-right: 5px;
+        /* border-radius: 50px; */
+        margin-bottom:5px ;
+        color: #282828;
+        font-size: 18px;
+        cursor: pointer;
+        
+    }
+    
+    .sidebar .recent .recent-entry .message-icon{
+        display: none;
     }
 
 }
