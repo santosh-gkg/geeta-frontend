@@ -71,7 +71,6 @@ const ContextProvider = (props) => {
     };
         
 
-
     const loadChat = (chatId) => {
         setCurrentChat(chatId);
     };

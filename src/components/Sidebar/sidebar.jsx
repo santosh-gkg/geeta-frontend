@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import './Sidebar.css';
 import { assets } from '../../assets/assets';
 import { Context } from '../../config/context';
-import {Popup} from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 const Sidebar = () => {
